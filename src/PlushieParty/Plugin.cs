@@ -1,5 +1,7 @@
 ﻿using BepInEx;
 using BepInEx.Logging;
+using HarmonyLib;
+using System.Reflection;
 
 namespace PlushieParty;
 
@@ -16,6 +18,7 @@ namespace PlushieParty;
 public partial class Plugin : BaseUnityPlugin
 {
     internal static ManualLogSource Log { get; private set; } = null!;
+    private readonly Harmony _harmony = new(Id);
 
     private void Awake()
     {
@@ -31,5 +34,6 @@ public partial class Plugin : BaseUnityPlugin
 
         // Log our awake here so we can see it in LogOutput.log file
         Log.LogInfo($"Plugin {Name} is loaded!");
+        _harmony.PatchAll(Assembly.GetExecutingAssembly());
     }
 }

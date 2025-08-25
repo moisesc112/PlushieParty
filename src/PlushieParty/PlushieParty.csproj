@@ -1,4 +1,4 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <!-- This is the most appropriate target framework for the game's Unity version. -->
@@ -27,5 +27,22 @@
   methods will be available at compile time for your code. You'll still
   need to add it as a dependency in your manifest.json, of course
   -->
+
+  <ItemGroup>
+	  <Reference Include="Assembly-CSharp">
+		  <HintPath>libs/Assembly-CSharp.dll</HintPath>
+		  <Private>false</Private>
+	  </Reference>
+	  
+	  <Reference Include="PhotonUnityNetworking">
+		  <HintPath>libs/PhotonUnityNetworking.dll</HintPath>
+		  <Private>false</Private>
+	  </Reference>
+	  <Reference Include="PhotonRealtime">
+		  <HintPath>libs/PhotonRealtime.dll</HintPath>
+		  <Private>false</Private>
+	  </Reference>
+	  
+  </ItemGroup>
 
 </Project>
