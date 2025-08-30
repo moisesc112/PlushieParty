@@ -1,3 +1,11 @@
 # Changelog
 
-TODO: You can follow this format for your changelog: <https://keepachangelog.com/en/1.1.0/>
+## [1.0.0] - 2025-08-30
+
+### Added
+
+### Changed 
+
+- Added status effect removal to Bing Bong.
+- Status effect for Bing Bong changes depending on zone. 
+
