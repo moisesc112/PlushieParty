@@ -47,6 +47,11 @@
 		  <HintPath>libs/Unity.InputSystem.dll</HintPath>
 		  <Private>false</Private>
 	  </Reference>
+
+	  <Reference Include="Zorro.Core.Runtime">
+		  <HintPath>libs/Zorro.Core.Runtime.dll</HintPath>
+		  <Private>false</Private>
+	  </Reference>
 	  
   </ItemGroup>
 
