@@ -1,5 +1,5 @@
 [config]
-schemaVersion = "0.0.1"
+schemaVersion = "0.1.2"
 
 [general]
 repository = "https://thunderstore.io"
@@ -7,8 +7,9 @@ repository = "https://thunderstore.io"
 [package]
 namespace = "Moiro"
 name = "PlushieParty"
-description = "TODO: Fill in short mod description."
-websiteUrl = "" # TODO: Add a link to your mod repository here (optional)
+versionNumber = "0.1.2"
+description = "Bing Bong helps with certain status effects!"
+websiteUrl = "https://github.com/moisesc112/PlushieParty" 
 containsNsfwContent = false
 
 [package.dependencies]
